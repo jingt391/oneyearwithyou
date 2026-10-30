@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>tao & jing</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <main id="experience">
+
+        <div id="canvas-container"></div>
+
+
+        <!-- TIMER -->
+
+        <div id="timer" class="timer">
+
+            <div class="time-item">
+                <span id="days" class="time-number">0</span>
+                <span class="time-label">DAYS</span>
+            </div>
+
+            <div class="time-item">
+                <span id="hours" class="time-number">00</span>
+                <span class="time-label">HOURS</span>
+            </div>
+
+            <div class="time-item">
+                <span id="minutes" class="time-number">00</span>
+                <span class="time-label">MINUTES</span>
+            </div>
+
+            <div class="time-item">
+                <span id="seconds" class="time-number">00</span>
+                <span class="time-label">SECONDS</span>
+            </div>
+
+        </div>
+
+
+        <!-- DATE -->
+
+        <div id="dateLabel" class="date-label">
+            NOVEMBER 07, 2025&nbsp;&nbsp;18:30
+        </div>
+
+
+        <!-- FINAL OPTION -->
+
+        <section id="options" class="options">
+
+            <a
+                href="#"
+                class="option option-diary"
+                id="diaryOption"
+            >
+
+                <div class="icon-container">
+
+                    <canvas
+                        id="diary-icon"
+                    ></canvas>
+
+                </div>
+
+                <div class="option-title">
+                    love diary
+                </div>
+
+            </a>
+
+        </section>
+
+
+        <!-- MAIN SCROLL -->
+
+        <div
+            id="scrollIndicator"
+            class="scroll-indicator"
+        >
+
+            <span>SCROLL</span>
+
+            <span class="scroll-arrow">
+                ↓
+            </span>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================================
+         DIARY
+    ========================================== -->
+
+    <section
+        id="diaryPage"
+        class="diary-page"
+    >
+
+        <button
+            id="diaryBack"
+            class="diary-back"
+            aria-label="Back"
+        >
+            ←
+        </button>
+
+
+        <!-- TEXT -->
+
+        <div class="diary-content">
+
+            <div
+                id="typewriterText"
+                class="typewriter-text"
+            ></div>
+
+        </div>
+
+
+        <!-- CABLE CAR -->
+
+        <canvas
+            id="cableCarCanvas"
+            class="cable-car-canvas"
+        ></canvas>
+
+
+        <!-- CHRISTMAS TREE -->
+
+        <canvas
+            id="christmasTreeCanvas"
+            class="christmas-tree-canvas"
+        ></canvas>
+
+
+        <!-- BIRTHDAY CAKE -->
+
+        <canvas
+            id="birthdayCakeCanvas"
+            class="birthday-cake-canvas"
+        ></canvas>
+
+
+        <!-- EARTH -->
+
+        <canvas
+            id="earthCanvas"
+            class="earth-canvas"
+        ></canvas>
+
+
+        <!-- CALENDAR -->
+
+        <canvas
+            id="calendarCanvas"
+            class="calendar-canvas"
+        ></canvas>
+
+
+        <!-- DIARY SCROLL ARROW -->
+
+        <div
+            id="diaryScrollHint"
+            class="diary-scroll-hint"
+        >
+            ↓
+        </div>
+
+    </section>
+
+    <!-- THREE JS -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    
+    <!-- Hidden YouTube background music player -->
+    <div id="youtubeMusicPlayer" aria-hidden="true"></div>
+    
+    <audio id="storyVoice" preload="auto"></audio>
+    
+    <!-- YouTube IFrame API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    
+    <!-- Your original JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
