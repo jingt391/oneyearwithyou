@@ -688,4 +688,15 @@ body.diary-open {
     .final-love-heart::after {
         left: 12px;
     }
+
+    .anniversary-signature {
+        font-size: 14px;
+        font-style: italic;
+        text-align: right;
+        margin-top: 12px;
+        padding-right: 0;
+        transform: translateX(150px);
+        opacity: 0.75;
+    }
 }
+

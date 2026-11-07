@@ -5454,6 +5454,7 @@ document.addEventListener(
     <div id="anniversaryMessage">
         <div class="anniversary-line-one">一周年快乐</div>
         <div class="anniversary-line-two">我爱你。</div>
+        <div class="anniversary-signature"> - from tao </div>
     </div>
 `;
     // Match the anniversary message to the original diary typewriter font.
