@@ -689,14 +689,21 @@ body.diary-open {
         left: 12px;
     }
 
-    .anniversary-signature {
+    #anniversaryMessage {
+        position: relative;
+    }
+    
+    #anniversaryMessage .anniversary-signature {
+        position: absolute;
+        top: 100%;
+        right: -200px;
+        left: auto;
+        width: max-content;
+        margin: 12px 0 0;
         font-size: 14px;
         font-style: italic;
-        text-align: right;
-        margin-top: 12px;
-        padding-right: 0;
-        transform: translateX(150px);
         opacity: 0.75;
+        transform: none;
     }
 }
 
